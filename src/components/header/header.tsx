@@ -25,8 +25,10 @@ const Header: React.FC = () => {
       boxShadow="sm"
       borderBottom="1px solid"
       borderColor="grey.200"
+      position="sticky"
+      top={0}
+      zIndex={1000}
     >
-      {/* Logo */}
       <Link to="/">
         <Image
           src="/logo.png"
@@ -38,7 +40,7 @@ const Header: React.FC = () => {
       <Spacer />
 
       <HStack spacing={4} align="center">
-        {/* Platform Tools */}
+
         <Link to="/interviews">
           <Button variant="ghost" size="sm" color="grey.600" _hover={{ color: 'teal.500' }}>
             Interviews
@@ -55,7 +57,7 @@ const Header: React.FC = () => {
           </Button>
         </Link>
 
-        {/* Primary CTA */}
+
         <Link to="/candidates">
           <Button
             bg="teal.400"
@@ -69,25 +71,15 @@ const Header: React.FC = () => {
           </Button>
         </Link>
 
-        {/* Login Dropdown */}
-        <Menu>
-          <MenuButton
-            as={Button}
-            variant="outline"
-            size="sm"
-            borderColor="grey.300"
-            color="grey.600"
-            _hover={{ borderColor: 'teal.400', color: 'teal.500' }}
-          >
-            Login
-          </MenuButton>
-          <MenuList>
-            <MenuItem as={Link} to="/employer-login">Employer Login</MenuItem>
-            <MenuItem as={Link} to="/candidate-login">Candidate Login</MenuItem>
-          </MenuList>
-        </Menu>
 
-        {/* Menu Icon Dropdown */}
+
+        <Link to="/login">
+          <Button variant="outline" size="sm" color="grey.600" backgroundColor="white.100" _hover={{ color: 'teal.500', backgroundColor: "grey.200" }}>
+            Login
+          </Button>
+        </Link>
+
+
         <Menu>
           <MenuButton
             as={IconButton}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { } from 'react';
 import {
     Box,
     Text,
@@ -7,6 +7,7 @@ import {
     Button,
     HStack,
 } from '@chakra-ui/react';
+import FadeInOnView from 'components/fadeInOnView/fadeInOnView';
 
 const LandingScreen: React.FC = () => {
     return (
@@ -46,15 +47,21 @@ const LandingScreen: React.FC = () => {
                         Vetted professionals across industries, roles, and experience levels. Intelligent hiring starts here.
                     </Text>
                     <HStack spacing={3} justify="center" align="center" flexWrap="wrap">
-                        <Button backgroundColor="teal.300" size="md" color="gray.200" _hover={{ bg: 'teal.400' }}>
-                            See Pricing
-                        </Button>
-                        <Text fontSize="md" fontWeight="medium" color="gray.200">
-                            or
-                        </Text>
-                        <Button colorScheme="green" size="md">
-                            Read Testimonials
-                        </Button>
+                        <FadeInOnView delay={0} isInView={true}>
+                            <Button backgroundColor="teal.300" size="md" color="gray.200" _hover={{ bg: 'teal.400' }}>
+                                See Pricing
+                            </Button>
+                        </FadeInOnView>
+                        <FadeInOnView delay={0.8} isInView={true}>
+                            <Text fontSize="md" fontWeight="medium" color="gray.200">
+                                or
+                            </Text>
+                        </FadeInOnView>
+                        <FadeInOnView delay={1.6} isInView={true}>
+                            <Button colorScheme="green" size="md">
+                                Contact Us
+                            </Button>
+                        </FadeInOnView>
                     </HStack>
                 </VStack>
             </Flex>
