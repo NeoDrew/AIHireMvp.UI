@@ -40,10 +40,10 @@ const LandingScreen: React.FC = () => {
                 px={4}
             >
                 <VStack spacing={6} maxW="600px" w="100%" color="white" textAlign="center">
-                    <Text fontSize={{ base: '3xl', md: '5xl' }} fontWeight="bold">
+                    <Text fontSize={{ base: '3xl', md: '5xl', lg: '6xl' }} fontWeight="bold">
                         Find the Perfect Candidate
                     </Text>
-                    <Text fontSize={{ base: 'md', md: 'lg' }}>
+                    <Text fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
                         Vetted professionals across industries, roles, and experience levels. Intelligent hiring starts here.
                     </Text>
                     <HStack spacing={3} justify="center" align="center" flexWrap="wrap">

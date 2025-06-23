@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   return (
     <Flex
       as="header"
-      h="65px"
+      h={{ base: '65px', sm: '55px', lg: '75px' }}
       px={6}
       bg="white.100"
       align="center"
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
         <Image
           src="/logo.png"
           alt="AIHire Logo"
-          h={{ base: '45px', sm: '35px' }}
+          h={{ base: '45px', sm: '35px', lg: '45px' }}
         />
       </Link>
 

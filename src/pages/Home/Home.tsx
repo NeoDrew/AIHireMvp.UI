@@ -3,9 +3,9 @@ import React from 'react';
 import AppContainer from 'components/appContainer';
 import Header from 'components/header';
 import Footer from 'components/footer';
-import HiringProcess from 'pages/Home/components/hiringProcess';
-import PsychometricTest from './components/psychometricTest';
+import HiringProcess from './components/hiringProcess';
 import LandingScreen from './components/landingScreen';
+import CostComparison from './components/costComparison';
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <Header />
       <LandingScreen />
       <HiringProcess />
-      <PsychometricTest />
+      <CostComparison />
       <Footer />
     </AppContainer>
   );
