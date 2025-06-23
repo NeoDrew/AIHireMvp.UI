@@ -8,10 +8,11 @@ import {
 
 import { ChakraProvider } from '@chakra-ui/react';
 
-import Home from 'pages/Home';
-
 import theme from 'theme';
-import FindTutor from 'pages/FindTutor';
+
+import Home from 'pages/Home';
+import Login from 'pages/Login';
+import Dashboard from 'pages/Dashboard';
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
           createRoutesFromElements(
             <>
               <Route path="/Home" element={<Home />} />
-              <Route path="/tutors" element={<FindTutor />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="*" element={<Home />} />
             </>,
           ),

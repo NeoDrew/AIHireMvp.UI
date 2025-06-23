@@ -8,6 +8,7 @@ import LandingScreen from './components/landingScreen';
 import CostComparison from './components/costComparison';
 
 const Home = () => {
+  document.title = 'Home - Deskie';
   return (
     <AppContainer>
       <Header />
