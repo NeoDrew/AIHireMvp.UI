@@ -28,7 +28,7 @@ const HiringProcess = () => {
     const isInView = useInView(ref, { once: true, margin: '0px 0px -100px 0px' });
 
     return (
-        <Box bg="white.100" pb={{ base: 10, md: 20 }} pt={{ base: 14, md: 10 }} px={{ base: 4, md: 12 }}>
+        <Box bg="white.100" pb={{ base: 10, md: 20 }} pt={{ base: 14, md: 10 }} px={{ base: 4, md: 12 }} minH="80vh" w="100%">
             <Flex align="center" justify="center">
                 <Heading size="2xl" color="teal.600" mb={2}>The Deskie Process</Heading>
             </Flex>

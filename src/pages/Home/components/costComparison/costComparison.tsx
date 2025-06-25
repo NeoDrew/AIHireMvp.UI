@@ -13,7 +13,7 @@ const CostComparison = () => {
     const bg = useColorModeValue("white.100", "white.800");
 
     return (
-        <Box bg={bg} py={{ base: 16, md: 24 }} px={{ base: 4, md: 16 }} minH="70vh" w="100%">
+        <Box bg={bg} py={{ base: 16, md: 24 }} px={{ base: 4, md: 16 }} minH="100vh" w="100%">
             <VStack align="start" spacing={12} w="100%">
                 <Box w="100%">
                     <Flex
