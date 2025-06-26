@@ -7,9 +7,6 @@ export interface EnvConfig {
   hosts: {
     api: string;
   };
-  keys: {
-    ag_grid: string;
-  };
 }
 
 declare global {

@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import Header from "../../components/header";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "utils";
 
 const data = [
     { name: "Mon", applications: 12 },
@@ -18,7 +20,19 @@ const data = [
     { name: "Fri", applications: 9 },
 ];
 
+
+
 const Dashboard = () => {
+    const { user, logout, loading } = useAuth();
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (loading) return;
+        if (!user) {
+            navigate("/login");
+        }
+    }, [user, loading, navigate]);
+
+
     useEffect(() => {
         document.title = "Dashboard - Deskie";
     }, []);
